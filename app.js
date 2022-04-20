@@ -1,5 +1,9 @@
 function findMultiples(integer, limit) {
-    //your code here
+    let myArr = []
+    for (var i = 1; i <= limit / integer; i++) {
+        myArr.push(i * integer)
+    }
+    return myArr;
 }
 
 console.log(findMultiples(5, 25));// [5, 10, 15, 20, 25]
